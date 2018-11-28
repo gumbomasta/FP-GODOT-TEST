@@ -32,10 +32,10 @@ var move_speed = run_speed
 
 # Controls
 var velocity = Vector3()
-var yaw = 0
-var pitch = 0
+export var yaw = 0
+export var pitch = 0
 var is_moving = false
-var view_sensitivity = 0.15
+export var view_sensitivity = 0.15
 
 var look_vector = Vector3()
 
@@ -74,7 +74,7 @@ func _process(d):
 		if x.has_method("pick_up"):
 			$interaction_text.set_text("[F]  Pick up: " + x.get_name())
 		elif x.has_method("interact"):
-			$interaction_text.set_text("[E]  Interact with: " + x.get_name())
+			$interaction_text.set_text("[E]  JUST Do it with: " + x.get_name())
 		else:
 			$interaction_text.set_text("")
 	else:

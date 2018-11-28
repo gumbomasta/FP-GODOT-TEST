@@ -3,7 +3,6 @@
 [ext_resource path="res://entities/Desk/desk man.material" type="Material" id=1]
 [ext_resource path="res://entities/Desk/tab_1_tex.jpg" type="Texture" id=2]
 
-
 [sub_resource type="GDScript" id=1]
 
 script/source = "
@@ -217,7 +216,7 @@ _sections_unfolded = [ "Albedo", "Emission", "Metallic", "Roughness", "Transmiss
 
 extents = Vector3( 0.262367, 0.295233, 0.447893 )
 
-[node name="monitor" type="RigidBody" index="0"]
+[node name="monitor" type="RigidBody"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.383889, 1.09508, 0.371485 )
 input_ray_pickable = true
